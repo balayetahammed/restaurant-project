@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/*----------------------------------------------------------END---------------------------------------------------------------*/
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    position: absolute;
+    width: 100%;
+}
+
+.dis_flex {
+    display: flex;
+    align-items: center;
+}
+
+.dis_flex .logo {
+    width: 20%;
+}
+
+.dis_flex .navber {
+    width: 80%;
+}
+
+.dis_flex .navber ul {
+    text-align: right;
+}
+
+.dis_flex .navber ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 37px 5px;
+    margin-left: 35px;
+    position: relative;
+}
+
+.dis_flex .navber ul li a {
+    text-decoration: none;
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+}
+.dis_flex .navber ul li::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    transition: 0.3s ease;
+}
+.dis_flex .navber ul li:hover::after{
+    width: 100%;
+}
+
+/*-------------------------------------------------------END--------------------------------------------------------------*/
+#slider {
+    background: url(../images/header-bgimg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.slider_text {
+    text-align: center;
+}
+
+.slider_text .main_title h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 90px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 1000px;
+    margin: 0 auto 30px auto;
+    padding-top: 240px;
+}
+
+.slider_text .decoration {
+    margin-bottom: 60px;
+}
+
+.slider_text .btn {
+    padding-bottom: 170px;
+}
+
+.slider_text .btn span a {
+    padding: 20px 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    ;
+    background: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.slider_text .btn .btn_1 {
+    margin-right: 30px;
+}
+
+.slider_text .btn span a:hover {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #000;
+}
+
+/*--------------------------------------------------------END------------------------------------------------------------------*/
+#right_food {
+    background: url(../images/section_02_img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.dis_flex_02 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dis_flex_02 .text {
+    width: 430px;
+    text-align: center;
+}
+
+.dis_flex_02 .text h2 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 24px;
+    color: #cc9900;
+    margin-bottom: 20px;
+}
+
+.dis_flex_02 .text p {
+    margin: 20px 0 50px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4c4c4c;
+}
+
+.dis_flex_02 .text .cook {
+    margin-left: 50px;
+}
+
+.dis_flex_02 .img {
+    width: 530px;
+    margin-left: -40px;
+}
+
+/*-----------------------------------------------------END------------------------------------------------------------------*/
+#fine_ingredients {
+    padding: 100px 0;
+    background: url(../images/ingredients_img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dis_flex_03 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dis_flex_03 .ingredients {
+    width: 570px;
+    background: rgba(0, 0, 0, 0.67);
+    padding: 80px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.dis_flex_03 .ingredients .h2_img {
+    margin-bottom: 27px;
+}
+
+.dis_flex_03 .ingredients .h2_img h2 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.dis_flex_03 .ingredients .text p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+.dis_flex_03 .ingredients .img .mar {
+    margin-right: 25px;
+}
+
+/*------------------------------------------------------END------------------------------------------------------------------*/
+#res_menu {
+    background: url(../images/menu_bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.dis_flex_04 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dis_flex_04 .appetisers {
+    width: 430px;
+}
+
+.dis_flex_04 .appetisers .h3_img {
+    text-align: center;
+}
+
+.dis_flex_04 .appetisers h3 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 24px;
+    color: #cc9900;
+    margin-bottom: 20px;
+}
+
+.dis_flex_04 .appetisers img {
+    margin-bottom: 30px;
+}
+
+.dis_flex_04 .appetisers .menu_list .span {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 24px;
+    color: #c89f2d;
+    margin-bottom: 10px;
+}
+
+.dis_flex_04 .appetisers .menu_list .span .right {
+    float: right;
+}
+
+.dis_flex_04 .appetisers .menu_list .p {
+    padding-top: 15px;
+    border-top: 1px solid #c89f2d;
+    margin-bottom: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4c4c4c;
+}
+
+.dis_flex_04 .appetisers .menu_list .mar {
+    margin-bottom: 70px;
+}
+
+.dis_flex_04 .appetisers .menu_list .margin {
+    margin-bottom: 0;
+}
+
+/*----------------------------------------------------------END---------------------------------------------------------------*/
+#guest_reviews{
+    background: url(../images/g.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+.dis_flex_05{
+    display: flex;
+    justify-content: center;
+}
+.dis_flex_05 .guest{
+    width: 770px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.67);
+    padding: 75px;
+}
+.dis_flex_05 .guest h2{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.dis_flex_05 .guest img{
+    margin-bottom: 30px;
+}
+.dis_flex_05 .guest p{
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 45px;
+    color: #dde0df;
+    margin-bottom: 45px;
+}
+.dis_flex_05 .guest span{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    line-height: 45px;
+}
+/*---------------------------------------------------------END-------------------------------------------------------------*/
+#right_food_02{
+    background: url(../images/section_02_img.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+}
+#right_food_02 .dis_flex_06{
+    display: flex;
+    justify-content: space-evenly;
+}
+#right_food_02 .dis_flex_06 .food_img{
+    width: 570px;
+}
+#right_food_02 .dis_flex_06 .food_img .mar{
+    margin-right: 25px;
+}
+#right_food_02 .dis_flex_06 .order_option{
+    width: 430px;
+}
+#right_food_02 .dis_flex_06 .order_option .h3_img{
+    text-align: center;
+}
+#right_food_02 .dis_flex_06 .order_option .h3_img h3{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 24px;
+    color: #cc9900;
+    margin-bottom: 20px;
+}
+#right_food_02 .dis_flex_06 .order_option .para{
+    margin-top: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4c4c4c;
+    text-align: center;
+    margin-bottom: 45px;
+}
+#right_food_02 .dis_flex_06 .order_option .form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+#right_food_02 .dis_flex_06 .order_option .form_01{
+    width: 200px;
+}
+#right_food_02 .dis_flex_06 .order_option .input_01 label{
+    margin-bottom: 5px;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #c9a131;
+}
+#right_food_02 .dis_flex_06 .order_option .input_01 input{
+    width: 200px;
+    padding: 8px;
+}
+#right_food_02 .dis_flex_06 .order_option .input_01 input[type]{
+    border: 1px solid #c8c6c6;
+}
+#right_food_02 .dis_flex_06 .order_option .input_01 .mar{
+    margin-bottom: 25px;
+}
+#right_food_02 .dis_flex_06 .order_option .form_02{
+    width: 200px;
+}
+#right_food_02 .dis_flex_06 .order_option .btn{
+    text-align: center;
+}
+#right_food_02 .dis_flex_06 .order_option .btn a{
+    text-decoration: none;
+    padding: 8px 60px;
+    background: #c9a131;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+/* ------------------------------------------------------------------------ */
+#footer{
+    background: #191919;
+    padding: 50px 0;
+}
+#footer .dis_flex_end{
+    display: flex;
+    justify-content: space-around;
+}
+#footer .dis_flex_end .col_1{
+    width: 370px;
+    text-align: center;
+}
+#footer .dis_flex_end .col_1 .h3_img h3{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    color: #fefefe;
+}
+#footer .dis_flex_end .col_1 .h3_img img{
+    margin: 20px 0;
+}
+#footer .dis_flex_end .col_1 .pera{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+#footer .dis_flex_end .col_2{
+    width: 370px;
+    text-align: center;
+}
+#footer .dis_flex_end .col_2 .h3_img h3{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    color: #fefefe;
+}
+#footer .dis_flex_end .col_2 .h3_img img{
+    margin: 20px 0;
+}
+#footer .dis_flex_end .col_2 .pera{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+#footer .dis_flex_end .col_3{
+    width: 370px;
+    text-align: center;
+}
+#footer .dis_flex_end .col_3 .h3_img h3{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    color: #fefefe;
+}
+#footer .dis_flex_end .col_3 .h3_img img{
+    margin: 20px 0;
+}
+#footer .dis_flex_end .col_3 .pera{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+/* ==============================================
+                    -THE END-
+================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+font-family: 'Gentium Book Basic', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Yeseva One', cursive;
+*/
